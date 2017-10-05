@@ -104,7 +104,7 @@ A baseline installation of a Linux distribution on a virtual machine and prepare
     $ python lotsofmenus.py
 
 ### 14. Update the Google OAuth settings
-    Fill in the client_id and client_secret fields in the file client_secrets.json. Also change the javascript_origins field to the IP address and AWS assigned URL of the host. In this instance that would be: "javascript_origins":["http://ec2-35-154-231-1.ap-south-1.compute.amazonaws.com"]
+   Fill in the client_id and client_secret fields in the file client_secrets.json. Also change the javascript_origins field to the IP address and AWS assigned URL of the host. In this instance that would be: "javascript_origins":["http://ec2-35-154-231-1.ap-south-1.compute.amazonaws.com"]
     These addresses also need to be entered into the Google Developers Console -> API Manager -> Credentials, in the web client under "Authorized JavaScript origins".
 
 ### 15. Configure apache2 to serve the app
