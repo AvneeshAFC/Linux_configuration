@@ -28,6 +28,11 @@ A baseline installation of a Linux distribution on a virtual machine and prepare
     Add "grader ALL=(ALL:ALL) ALL" to the newly created file and save
 
 ### 4. Setup SSH keys for user grader
+    $ ssh-keygen -t rsa
+    Copy the contents of the .pub file to the virtual machine
+    $ nano /home/grader/.ssh/authorized_keys
+    Now, we are able to login to the lightsail instance by :
+    ssh grader@35.154.231.1 -i ~/.ssh/LightsailDefaultPrivateKey-ap-south-1.pem     
     Source : https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
 
 ### 5. Change SSH port to 2200
