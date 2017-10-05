@@ -1,16 +1,17 @@
-Linux Server Configuration
-
-    A baseline installation of a Linux distribution on a virtual machine and prepare it to host web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers.
+# Linux Server Configuration
 
 
-Server Details
+A baseline installation of a Linux distribution on a virtual machine and prepare it to host web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers.
+
+
+# Server Details
 
     Public IP address : 35.154.231.1
     SSH port : 2200
     URL : http://ec2-35-154-231-1.ap-south-1.compute.amazonaws.com
 
 
-Server Configuration Steps
+# Server Configuration Steps
 
 1. Creating an AWS Lightsail instance. Download the private key to your local machine.
 
@@ -63,12 +64,12 @@ Server Configuration Steps
         $ psql
     3. Create a new user and database named catalog. Connect to the db, revoke rights,
     lock down permissions only to user catalog.
-        # CREATE USER catalog WITH PASSWORD 'password';
-        # CREATE DATABASE catalog WITH OWNER catalog;
-        # \c catalog
-        # REVOKE ALL ON SCHEMA public FROM public;
-        # GRANT ALL ON SCHEMA public TO catalog;
-        # \q
+        CREATE USER catalog WITH PASSWORD 'password';
+        CREATE DATABASE catalog WITH OWNER catalog;
+        \c catalog
+        REVOKE ALL ON SCHEMA public FROM public;
+        GRANT ALL ON SCHEMA public TO catalog;
+        \q
         $ exit
 
 10. Install Flask
