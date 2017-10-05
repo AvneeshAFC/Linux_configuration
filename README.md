@@ -4,14 +4,13 @@
 A baseline installation of a Linux distribution on a virtual machine and prepare it to host web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers.
 
 
-# Server Details
-
+## Server Details
     Public IP address : 35.154.231.1
     SSH port : 2200
-    URL : http://ec2-35-154-231-1.ap-south-1.compute.amazonaws.com
+   URL : http://ec2-35-154-231-1.ap-south-1.compute.amazonaws.com
 
 
-# Server Configuration Steps
+## Server Configuration Steps
 
 ### 1. Creating an AWS Lightsail instance. Download the private key to your local machine.
 
